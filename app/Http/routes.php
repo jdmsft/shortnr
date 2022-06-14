@@ -14,7 +14,7 @@ if (env('POLR_ALLOW_ACCT_CREATION')) {
 
 /* GET endpoints */
 
-$app->get('/', ['as' => 'index', 'uses' => 'IndexController@showIndexPage']);
+$app->get('/new', ['as' => 'index', 'uses' => 'IndexController@showIndexPage']);
 $app->get('/logout', ['as' => 'logout', 'uses' => 'UserController@performLogoutUser']);
 $app->get('/login', ['as' => 'login', 'uses' => 'UserController@displayLoginPage']);
 $app->get('/about-polr', ['as' => 'about', 'uses' => 'StaticPageController@displayAbout']);
